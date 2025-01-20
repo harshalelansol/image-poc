@@ -10,7 +10,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imageCount);
-    }, 50); // Change the speed to 500ms (half a second)
+    }, 200); // Change the speed to 500ms (half a second)
 
     return () => clearInterval(interval);
   }, [imageCount]);
